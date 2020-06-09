@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jinwoo/Documents/Source/dgsw.algorithm_2/Lecture03/problem3/Person.h
+string
+-
+
+/Users/jinwoo/Documents/Source/dgsw.algorithm_2/Lecture03/problem3/main.cpp
+iostream
+-
+Person.h
+/Users/jinwoo/Documents/Source/dgsw.algorithm_2/Lecture03/problem3/Person.h
+

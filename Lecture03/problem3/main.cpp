@@ -34,5 +34,20 @@ int main() {
     node2.next = &node3;
     node3.next = &node4;
     node4.next = &node5;
+
+    Node *delCurrentNode = &node1;
+    while (delCurrentNode->next != nullptr) {
+        if (delCurrentNode->next->person->room == 403) {
+            delCurrentNode->next = delCurrentNode->next->next;
+        }
+        delCurrentNode = delCurrentNode->next;
+    }
+
+    Node *currentNode = &node1;
+    while (currentNode != nullptr) {
+        cout << currentNode->person->room << " " << currentNode->person->name << endl;
+        currentNode = currentNode->next;
+    }
+
 }
 
